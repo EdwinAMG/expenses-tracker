@@ -1,0 +1,309 @@
+.expense-tracker {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #023047;
+  }
+  
+  .expense-tracker h1 {
+    font-size: 40px;
+  }
+  .expense-tracker button {
+    margin-left: 10px;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+  }
+  .profile-photo {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .sign-out-button {
+    border: none;
+    margin-top: 50px;
+    width: 150px;
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .sign-out-button:hover {
+    background: #3cb0fd;
+  
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la clase "transactions" */
+.transactions {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transactions h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.transactions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transactions li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin: -20px 0;
+}
+
+.transactions li:last-child {
+  border-bottom: none;
+}
+
+.transactions h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.transactions p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.transactions label {
+  font-weight: bold;
+}
+
+/* Estilos para el enlace "Sign Out" */
+.sign-out-button {
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-photo {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+/* Estilos para el contenedor de la imagen de perfil */
+.profile {
+  text-align: center;
+}
+
+/* Estilos para el contenedor de resultados */
+.results {
+  text-align: center;
+}
+
+/* Estilos para el balance */
+.balance {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.balance h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.balance h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+/* Estilos para el resumen (income y expenses) */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.income, .expenses {
+  flex-basis: 48%;
+  text-align: center;
+}
+
+.income h4, .expenses h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.income p, .expenses p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #007bff; /* Color azul para ingresos y rojo para gastos */
+}
+
+  .results{ 
+    text-align: center;
+    border-radius: 45px;
+    background: linear-gradient(225deg, #97a5e6, #b4c4ff);
+    box-shadow:  -15px 15px 40px #8f9cd9,
+                  15px -15px 40px #c1d2ff;
+  }
+  .Description,.Amount{
+    margin: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #000000;
+  }
+  .Tbutton {
+    padding: 12.5px 30px;
+    margin-right: 20px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .Tbutton:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .Tbutton:active {
+    background-color: #3d94cf;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+/* checkbox settings 👇 */
+
+.ui-checkbox {
+  --primary-color: #1677ff;
+  --secondary-color: #fff;
+  --primary-hover-color: #4096ff;
+  /* checkbox */
+  --checkbox-diameter: 20px;
+  --checkbox-border-radius: 5px;
+  --checkbox-border-color: #d9d9d9;
+  --checkbox-border-width: 1px;
+  --checkbox-border-style: solid;
+  /* checkmark */
+  --checkmark-size: 1.2;
+}
+
+.ui-checkbox, 
+.ui-checkbox *, 
+.ui-checkbox *::before, 
+.ui-checkbox *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ui-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: var(--checkbox-diameter);
+  height: var(--checkbox-diameter);
+  border-radius: var(--checkbox-border-radius);
+  background: var(--secondary-color);
+  border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.ui-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+  box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+  border-radius: inherit;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+}
+
+.ui-checkbox::before {
+  top: 40%;
+  left: 50%;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  border-right: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+}
+
+/* actions */
+
+.ui-checkbox:hover {
+  border-color: var(--primary-color);
+}
+
+.ui-checkbox:checked {
+  background: var(--primary-color);
+  border-color: transparent;
+}
+
+.ui-checkbox:checked::before {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+.ui-checkbox:active:not(:checked)::after {
+  -webkit-transition: none;
+  -o-transition: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: none;
+  opacity: 1;
+}
